@@ -6290,7 +6290,7 @@ body, input, select, button {
   background: #222;
   color: #fff;
   font-family: "raleway", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   height: 100%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -6381,11 +6381,11 @@ body, input, select, button {
   transition: all 0.1s ease; }
 
 .content-date {
-  padding-top: 2em; }
+  padding-top: 0.4em; }
 
 .content {
   overflow: hidden;
-  margin-bottom: 1.5em; }
+  margin-bottom: 2em; }
   .content:hover .content-excerpt, .content:active .content-excerpt, .content:focus .content-excerpt {
     opacity: 1; }
   .content:hover .content-image, .content:active .content-image, .content:focus .content-image {
@@ -6511,7 +6511,7 @@ body, input, select, button {
   .menu {
     float: right; }
   .content {
-    height: 384px; }
+    height: 300px; }
   .content:nth-child(2n+0) .content-image {
     float: right; } }
 
