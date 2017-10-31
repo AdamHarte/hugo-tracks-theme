@@ -6427,7 +6427,22 @@ body, input, select, button {
     margin-bottom: 2em; }
 
 .title-info {
-  font-size: 2.0em; }
+  width: 100%;
+  text-align: center; }
+.title-info h1 {
+  opacity: 0.9;
+  font-size: 6.0em;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.5em;
+  display: inline-block; }
+
+.title-about {
+  font-size: 1.2em;
+  font-style: italic;
+  opacity: 0.8;
+  text-align: center; }
 
 .category-header, .category-description {
   opacity: 0.4;
@@ -6489,7 +6504,20 @@ body, input, select, button {
       text-transform: none;
       margin-bottom: 0;
       display: inline-block;
-      padding: 0 0.3em; } }
+      padding: 0 0.3em; }
+    
+      .title-info h1 {
+        font-size: 3.0em;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        line-height: 1.3em;
+       }
+    
+      .title-about {
+        font-size: 1.1em; }
+    }
+      
+  
 
 @media (min-width: 768px) {
   .top-navigation {
@@ -6514,7 +6542,8 @@ body, input, select, button {
   .content {
     height: 300px; }
   .content:nth-child(2n+0) .content-image {
-    float: right; } }
+    float: right; } 
+}
 
 @media only screen and (max-width: 425px) {
   .content .content-image {
