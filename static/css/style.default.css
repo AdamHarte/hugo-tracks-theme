@@ -6381,7 +6381,7 @@ body, input, select, button {
   transition: all 0.1s ease; }
 
 .content-date {
-  padding-top: 3.7em; }
+  padding-top: 2em; }
 
 .content {
   overflow: hidden;
@@ -6402,7 +6402,8 @@ body, input, select, button {
   font-size: 1em;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 3em; }
 
 .entry-header {
   color: #4d4d4d;
@@ -6470,7 +6471,8 @@ body, input, select, button {
   .entry-header {
     font-size: 2em; }
   .entry-meta {
-    margin-top: 1em; }
+    margin-top: 1em;
+    padding-top: 1em; }
   .entry-sidebar {
     color: #4d4d4d;
     font-size: 0.8em;
