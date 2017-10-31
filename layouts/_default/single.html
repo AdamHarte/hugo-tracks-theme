@@ -18,6 +18,14 @@
   <div class="row">
     <div class="col-md-2">
       <div class="entry-sidebar">
+        {{ if and (isset .Params "client") .Params.client }}
+        <div class="entry-sidebar-title">CLIENT</div>
+        <div class="entry-categories">{{ .Params.client }}</div>
+        {{ end }}
+        {{ if and (isset .Params "credit") .Params.credit }}
+        <div class="entry-sidebar-title">CREDIT</div>
+        <div class="entry-categories">{{ .Params.credit }}</div>
+        {{ end }}
         {{ if .Site.Taxonomies.categories }}
         <div class="entry-sidebar-title">CATEGORIES</div>
         {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
