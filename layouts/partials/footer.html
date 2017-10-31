@@ -2,20 +2,15 @@
   <div class="col-md-12 footer-title">
     <h2>
       {{ with .Site.Title }}
-      <a href=""> {{ . }} </a>
+      <a href="/"> {{ . }} </a>
       {{ end }}
     </h2>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12 footer-menu">
-      <a href="/">Home /</a>
-      {{ range $name, $taxonomy := .Site.Sections }}
-      {{ if ne $name "post" }}
-      <a href="/{{ $name | urlize }}">{{ $name }} / </a>
-      {{ end }}
-      {{ end }}
-
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
   </div>
 </div>
 <div class="row">

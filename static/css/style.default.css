@@ -6327,7 +6327,8 @@ body, input, select, button {
   word-wrap: break-word; }
 
 .content-column-content {
-  margin-top: 4em; }
+  margin-top: 4em;
+  margin-bottom: 4em; }
 
 .content-title {
   color: #222;
