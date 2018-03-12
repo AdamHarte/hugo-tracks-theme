@@ -6421,10 +6421,12 @@ body, input, select, button {
   text-align: right;
   text-transform: uppercase;
   margin-top: 3em; }
+  .entry-sidebar-group {
+    margin-bottom: 2em; }
   .entry-sidebar .entry-categories, .entry-sidebar .entry-tags {
     color: #8c8c8c;
     text-transform: none;
-    margin-bottom: 2em; }
+    margin-bottom: 0; }
 
 .title-info {
   width: 100%;
@@ -6502,12 +6504,16 @@ body, input, select, button {
     margin-bottom: 1em; }
     .entry-sidebar .entry-sidebar-title {
       margin-top: 0.7em; }
+    .entry-sidebar .entry-sidebar-group {
+      margin-bottom: 0;
+      display: inline-block;
+      padding: 0; }
     .entry-sidebar .entry-categories, .entry-sidebar .entry-tags {
       color: #8c8c8c;
       text-transform: none;
       margin-bottom: 0;
       display: inline-block;
-      padding: 0 0.3em; }
+      padding: 0; }
     
       .title-info h1 {
         font-size: 3.0em;

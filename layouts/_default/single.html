@@ -19,29 +19,50 @@
     <div class="col-md-2">
       <div class="entry-sidebar">
         {{ if and (isset .Params "client") .Params.client }}
-        <div class="entry-sidebar-title">CLIENT</div>
-        <div class="entry-categories">{{ .Params.client }}</div>
-        {{ end }}
-        {{ if and (isset .Params "credit") .Params.credit }}
-        <div class="entry-sidebar-title">CREDIT</div>
-        <div class="entry-categories">{{ .Params.credit }}</div>
-        {{ end }}
-        {{ if .Site.Taxonomies.categories }}
-        <div class="entry-sidebar-title">CATEGORIES</div>
-        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-        <div class="entry-categories">
-          <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+        <div class="entry-sidebar-group">
+          <div class="entry-sidebar-title">CLIENT</div>
+          <div class="entry-tags">{{ .Params.client }}</div>
         </div>
-        {{ end }}
         {{ end }}
         
-        {{ if .Site.Taxonomies.tags }}
-        <div class="entry-sidebar-title">Tags</div>
-        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-        <div class="entry-tags">
-          <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+        {{ if and (isset .Params "credit") .Params.credit }}
+        <div class="entry-sidebar-group">
+          <div class="entry-sidebar-title">CREDIT</div>
+          <div class="entry-tags">{{ .Params.credit }}</div>
         </div>
         {{ end }}
+        
+        {{ if .Params.types }}
+        <div class="entry-sidebar-group">
+          <div class="entry-sidebar-title">Types</div>
+          {{ range .Params.types }}
+          <div class="entry-tags">
+            <a href="/types/{{ . | urlize }}">{{ . }}</a>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        {{ if .Params.roles }}
+        <div class="entry-sidebar-group">
+          <div class="entry-sidebar-title">Roles</div>
+          {{ range .Params.roles }}
+          <div class="entry-tags">
+            <a href="/roles/{{ . | urlize }}">{{ . }}</a>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+        
+        {{ if .Params.skills }}
+        <div class="entry-sidebar-group">
+          <div class="entry-sidebar-title">Skills</div>
+          {{ range .Params.skills }}
+          <div class="entry-tags">
+            <a href="/skills/{{ . | urlize }}">{{ . }}</a>
+          </div>
+          {{ end }}
+          </div>
         {{ end }}
       </div>
     </div>
